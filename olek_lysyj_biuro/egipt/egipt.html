@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wlochy</title>
+    <link rel="stylesheet" href="egipt.css" type="text/css">
+</head>
+<body> 
+    <header><h1>Egipt</h1></header>
+    <main> 
+    <button><a href="..\lysyj_olek.html">Wróc</a></button>
+   
+    <section>
+        <article>
+        <strong>Kairo (video 1) </strong>
+         <span>od</span>
+        <strong>1&nbsp;459</strong><span class="pln">pln</span>
+        <ol>
+        <li>znane na caly świat piramidy </li>
+        <li>poczucie strarożytności</li>
+        <li>wycieczka</li>
+        </ol>
+        </article>
+
+        <article style="margin-top:20px;">
+            <strong>Kairo (video 2) </strong>
+             <span>od</span>
+            <strong>1&nbsp;000</strong><span class="pln">pln</span>
+            <ol>
+            <li>stare pomniki</li>
+            <li>starozytna architektura</li>
+            <li>2 wycieczki</li>
+            </ol>
+        </article>
+
+        <figure>
+            <img src="egipt.jpg" alt="egipt"> 
+            <figcaption>Cairo , Egypt</figcaption>
+        </figure>
+
+        <article style="margin-top:20px;">
+            <strong>Kairo (video 3) </strong>
+             <span>od</span>
+            <strong>&nbsp;529</strong><span class="pln">pln</span>
+            <ol>
+            <li>egipska kaczka</li>
+            <li>pozna dotknac</li>
+            <li>3-eh godzinowa wycieczka</li>
+            </ol>
+        </article>
+
+        <article style="margin-top:20px; margin-bottom:20px ">
+            <strong>Kairo (video 4) </strong>
+             <span>od</span>
+            <strong>&nbsp;120</strong><span class="pln">pln</span>
+            <ol>
+            <li>Lekcja z historii starozynego Egiptu</li>
+            </ol>
+        </article>
+    </section>
+     
+   
+        
+
+    <div class="container">
+        <div class="box">
+            <video src="e_clip1.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+        <div class="box">
+            <video src="e_clip2.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+        <div class="box">
+            <video src="e_clip3.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+
+        <div class="box">
+            <video src="e_clip4.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+              
+
+    </div>
+
+   
+</main>
+    <footer>
+         
+        
+        <h6 >O nas</h6>
+        <p style="padding-bottom: 21px ;">Nasze Biuro Dziala Od 21.12.2021  </p>  
+        <hr>
+          <p style="padding-top:20px">Copyright  &copy; 2021 Wszelkie prawa zastrzeżone przez Olek Lysyj</p>
+
+</footer>
+
+    
+</body>
+<script>
+     const clip = document.querySelectorAll('.clip');
+    for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener('mouseenter', function(e) {
+            clip[i].play()
+        })
+        clip[i].addEventListener('mouseout', function(e) {
+            clip[i].pause()
+        })
+    }
+
+</script>
+</html>

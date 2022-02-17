@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wlochy</title>
+    <link rel="stylesheet" href="francja.css" type="text/css">
+</head>
+<body> 
+    <header><h1>Francja</h1></header>
+    <main> 
+    <button><a href="..\lysyj_olek.html">Wróc</a></button>
+   
+    <section>
+        <article>
+        <strong>Orléans (video 1) </strong>
+         <span>od</span>
+        <strong>&nbsp;759</strong><span class="pln">pln</span>
+        <ol>
+        <li>autentyczna atmosfera </li>
+        <li> nowoczesne turbiny wiatrowe</li>
+        <li>malownicze położenie</li>
+        </ol>
+        </article>
+
+        <article style="margin-top:20px;">
+            <strong>Parc national des Écrins  (video 2) </strong>
+             <span>od</span>
+            <strong>1&nbsp;200</strong><span class="pln">pln</span>
+            <ol>
+            <li>wulkan</li>
+            <li>Piękne góry</li>
+            <li>autentyczna atmosfera</li>
+            <li>czyste powietrze</li>
+            <li>jedna noc obok wulkanu</li>
+            </ol>
+        </article>
+
+        <figure>
+            <img src="france.jpg" alt="france"> 
+            <figcaption>Paris , France</figcaption>
+        </figure>
+
+        <article style="margin-top:20px;">
+            <strong>Brest (video 3) </strong>
+             <span>od</span>
+            <strong>2&nbsp;029</strong><span class="pln">pln</span>
+            <ol>
+            <li>Stary zamek</li>
+            <li> Hotel "Onne Brest"</li>
+            <li> Dobra kuchnia</li>
+            <li>Piazza Paris</li>
+            </ol>
+        </article>
+
+        <article style="margin-top:20px; margin-bottom:20px ">
+            <strong>Monako (video 4) </strong>
+             <span>od</span>
+            <strong>3&nbsp;120</strong><span class="pln">pln</span>
+            <ol>
+            <li>Piękne ulice</li>
+            <li>Stare domiki</li>
+            <li>Blisko moza</li>
+            <li>Prezydenski pokój</li>
+           
+            </ol>
+        </article>
+    </section>
+     
+   
+        
+
+    <div class="container">
+        <div class="box">
+            <video src="f_clip1.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+        <div class="box">
+            <video src="f_clip2.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+        <div class="box">
+            <video src="f_clip3.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+
+        <div class="box">
+            <video src="f_clip4.mp4" type="video/mp4" loop muted class="clip"></video>
+        </div>
+              
+
+    </div>
+
+   
+</main>
+    <footer>
+         
+        
+        <h6 >O nas</h6>
+        <p style="padding-bottom: 21px ;">Nasze Biuro Dziala Od 21.12.2021  </p>  
+        <hr>
+          <p style="padding-top:20px">Copyright  &copy; 2021 Wszelkie prawa zastrzeżone przez Olek Lysyj</p>
+
+</footer>
+
+    
+</body>
+<script>
+     const clip = document.querySelectorAll('.clip');
+    for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener('mouseenter', function(e) {
+            clip[i].play()
+        })
+        clip[i].addEventListener('mouseout', function(e) {
+            clip[i].pause()
+        })
+    }
+
+</script>
+</html>
